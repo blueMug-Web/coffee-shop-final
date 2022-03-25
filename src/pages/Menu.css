@@ -77,30 +77,67 @@ h5 {
 	color: rgb(231, 231, 231);
 }
 
+/* -- ** ************* ** -- */
+/* -- ** MEDIA QUERIES ** -- */
+/* -- ** ************* ** -- */
 
-@media screen and (min-width: 600px) {
-	h1 {
-		font-size: 140px;
-		bottom: -130px;
+/* Smaller Phones */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+	.content-container {
+
+		padding: 0px;
+		margin: 0;
+		display: flex;
+	 flex-flow: row wrap; 
+	}
+	.menu-content {
+		display: flex;
+		flex-direction: column;
+		position:relative;
+		justify-content: center;
+		align-items: center;
+		right: 50px;
+		font-size: 16px;
+		z-index: 1;
+		width: 100%;
+		top: 4%;
+	}
+	.single {
+		display: none;
+	}
+	
+}
+/* Small devices and most phones */
+@media only screen and (min-width: 480px) {
+	
+}
+/* Most tablets */
+@media only screen and (min-width: 768px) {
+	
+}
+/* Smaller Desktop */
+@media only screen and (min-width: 992px) {
+	
+	.single {
+		overflow: hidden;
+		height: 100vh;
+	}
+	.single img {
+		max-width: 100%;
+		max-height: 100vh;
+		margin: 5px;
 	}
 }
-
-@media screen and (min-width: 800px) {
-	h1 {
-		font-size: 180px;
-		bottom: -170px;
+/* Large devices and wide screens */
+@media only screen and (min-width: 1200px) {
+	
+	.single {
+		overflow: hidden;
+		height: 100vh;
 	}
-}
-
-@media screen and (min-width: 1000px) {
-	h1 {
-		font-size: 220px;
-		bottom: -200px;
-	}
-}
-@media screen and (min-width: 1200px) {
-	h1 {
-		font-size: 280px;
-		bottom: -260px;
+	.single img {
+		max-width: 100%;
+		max-height: 100vh;
+		margin: 5px;
 	}
 }

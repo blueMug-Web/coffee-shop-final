@@ -384,9 +384,9 @@ body::-webkit-scrollbar {
 	color: rgb(165, 165, 165);
 }
 
-
-
+/* -- ** ************* ** -- */
 /* -- ** MEDIA QUERIES ** -- */
+/* -- ** ************* ** -- */
 
 /* Smaller Phones */
 @media only screen and (min-width: 320px) {
@@ -440,18 +440,45 @@ body::-webkit-scrollbar {
 		display: flex;
 		position: relative;
 		flex-direction: column;
-		width: 60%;
+		width: 40%;
 		height:100%;
 		justify-content: center;
 		align-items: center;
-		 padding-top: 50%; 
+		 padding-top: 30%; 
 		
 	  } 
+	.drinks-hover-title{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0.6;
+	}
+	.bakery-hover-title{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0.6;
+	}
+	.sandwiches-hover-title{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0.6;
+	}
+	.drinks-hover-h3{
+		font-size: 35px;
+	}
+	.bakery-hover-h3{
+		font-size: 35px;
+	}
+	.sandwiches-hover-h3{
+		font-size: 35px;
+	}
 	.top-text{
 		display: flex;
 		flex-direction: column;
 		position: relative;
-		top: 7em;
+		top: 4em;
 		justify-content: center;
 		align-items: center;
 		
@@ -464,7 +491,7 @@ body::-webkit-scrollbar {
 		top: 4rem;
 	}
 	h1.site-title{
-		font-size: 3.5em;
+		font-size: 2.5em;
 	}
 	ul.socials {
 		display: flex;
@@ -474,35 +501,137 @@ body::-webkit-scrollbar {
 		padding: 0;
 	}
 }
-/* Extra Small devices and some phones (iPhone SE) */
-/* @media only screen and (min-width: 400px) {
+@media only screen and (min-width: 320px) and (max-width: 390px){
 	.categories-container{
 		display: flex;
 		position: relative;
 		flex-direction: column;
-		width: 50%;
+		width: 60%;
 		height:100%;
 		justify-content: center;
 		align-items: center;
-		padding-top: 20%; 
+		 padding-top: 30%; 
+		
 	  } 
-	  .site-title{
+	ul.socials {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 26%;
+		padding: 0;
+	}
+	.footer-container {
+		grid-area: footer;
+		/* margin-top: 8rem; */
+		/* display: flex;
+		position: relative; */
+	
+		/* position: absolute;
+		  bottom: 0;
+		  left: 0; */
+		display:flex;
+		  position: relative;
+		  bottom: 6%;
+		
+		justify-content:flex-end;
+		align-items: center;
+		
+		grid-column: 1 / span 3;
+		flex-direction: column;
+		background-color: rgb(34, 33, 33);
+		width: 100vw;
+		height: 10em;
+		max-height: 100%;
+		margin: 0;
+		/* padding-bottom: 5em; */
+		z-index: -10;
+		overflow: hidden;
+	}
+	.footer-text {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		justify-content: flex-end;
+		align-items: center;
+		color: white;
+		height: 100%;
+		width: 100%;
+		  margin-top: 0em;
+		color: rgb(165, 165, 165);
+	}
+	p.footer-text {
+
+	}
+}
+@media only screen and (min-width: 391px) and (max-width: 479px) { 
+	.categories-container{
 		display: flex;
 		position: relative;
-		z-index: 10;
-		top: 1rem;
+		flex-direction: column;
+		width: 80%;
+		height:100%;
+		justify-content: center;
+		align-items: center;
+		 padding-top: 30%; 
+		
+	  } 
+	ul.socials {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 26%;
+		padding: 0;
 	}
-	h1.site-title{
-		font-size: 3.5em;
+	.footer-container {
+		grid-area: footer;
+		/* margin-top: 8rem; */
+		/* display: flex;
+		position: relative; */
+	
+		/* position: absolute;
+		  bottom: 0;
+		  left: 0; */
+		display:flex;
+		  position: relative;
+		  bottom: 6%;
+		
+		justify-content:flex-end;
+		align-items: center;
+		
+		grid-column: 1 / span 3;
+		flex-direction: column;
+		background-color: rgb(34, 33, 33);
+		width: 100vw;
+		height: 10em;
+		max-height: 100%;
+		margin: 0;
+		/* padding-bottom: 5em; */
+		z-index: -10;
+		overflow: hidden;
 	}
-} */
+	.footer-text {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		justify-content: flex-end;
+		align-items: center;
+		color: white;
+		height: 100%;
+		width: 100%;
+		  margin-top: 0em;
+		color: rgb(165, 165, 165);
+	}
+	p.footer-text {
+
+	}
+}
 /* Small devices and most phones */
 @media only screen and (min-width: 480px) {
 	.categories-container{
 		display: flex;
 		position: relative;
 		flex-direction: column;
-		width: 50%;
+		width: 30%;
 		height:100%;
 		justify-content: center;
 		align-items: center;
@@ -512,12 +641,13 @@ body::-webkit-scrollbar {
 		display: flex;
 		position: relative;
 		z-index: 10;
-		top: 0.6rem;
+		top: 4rem;
 	}
 	h1.site-title{
-		font-size: 4.5em;
+		font-size: 2.5em;
 	}
 }
+
 /* Most tablets */
 @media only screen and (min-width: 768px) {
 	.categories-container{
@@ -534,7 +664,10 @@ body::-webkit-scrollbar {
 		display: flex;
 		position: relative;
 		z-index: 10;
-		top: 1.5rem;
+		top: 4.5rem;
+	}
+	h1.site-title{
+		font-size: 4.5em;
 	}
 	ul.socials {
 		display: flex;
@@ -565,6 +698,71 @@ body::-webkit-scrollbar {
 	}
 	h1.site-title{
 		font-size: 6em;
+	}
+
+	/* --- PRODUCT TILES --- */
+	.drinks-hover-title{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		background-color: rgba(255, 255, 255, 0);
+		transition: background-color 0.5s ease-in-out, opacity 0.65s ease-in-out; 
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow-x: hidden;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	.drinks-hover-title:hover{
+		opacity: 1;
+		background-color: rgba(139, 139, 139, 0.351);
+	}
+	.drinks-hover-h3{
+		font-size: 55px;
+	}
+	.bakery-hover-title{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		background-color: rgba(255, 255, 255, 0);
+		transition: background-color 0.5s ease-in-out, opacity 0.65s ease-in-out; 
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow-x: hidden;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	.bakery-hover-title:hover{
+		opacity: 1;
+		background-color: rgba(139, 139, 139, 0.351);
+	}
+	.bakery-hover-h3{
+		font-size: 55px;
+	}
+	.sandwiches-hover-title{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		background-color: rgba(255, 255, 255, 0);
+		transition: background-color 0.5s ease-in-out, opacity 0.65s ease-in-out; 
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow-x: hidden;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	.sandwiches-hover-title:hover{
+		opacity: 1;
+		background-color: rgba(139, 139, 139, 0.351);
+	}
+	.sandwiches-hover-h3{
+		font-size: 55px;
 	}
 }
 /* Large devices and wide screens */
