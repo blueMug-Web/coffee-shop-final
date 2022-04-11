@@ -1,13 +1,71 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@500;900&display=swap");
+
+@font-face {
+	font-family: "NothingYouCouldDo";
+	src: local("NothingYouCouldDo"),
+		url("./fonts/Nothing_You_Could_Do/NothingYouCouldDo-Regular.ttf")
+			format("truetype");
+	/* font-weight: 100; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+	margin: 0;
+	font-family: "NothingYouCouldDo";
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	/* max-width: 100%; */
+	/* width: 100%;
+	height: 100vh;
+	overflow-x: hidden;
+	
+	background-image: linear-gradient(rgba(95, 76, 54, 0.7), rgba(209, 131, 58, 0.534)), url("./assets/images/home/home_bgMain.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; */
+	/* background-image: linear-gradient(rgba(95, 76, 54, 0.7), rgba(211, 129, 53, 0.7)) */
+	background-image: linear-gradient(rgba(95, 76, 54, 0.7), rgba(209, 131, 58, 0.534)), url("./assets/images/home/home_bgMain.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+* {
+	box-sizing: border-box;
+	/* font-family: Helvetica, sans-serif; */
+	/* font-weight: 900; */
+	color: #222;
+}
+
+
+
+
+/* Smaller Phones */
+@media only screen and (min-width: 320px) {
+	body {
+			max-width: 100%;
+			width: 100%;
+			height: 100vh;
+			background-image: linear-gradient(rgba(95, 76, 54, 0.7), rgba(209, 131, 58, 0.534)), url("./assets/images/home/home_bgMain.jpg");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+	}
+}
+/* Small devices and most phones */
+@media only screen and (min-width: 480px) {
+	
+}
+/* Most tablets */
+@media only screen and (min-width: 768px) {
+	
+}
+/* Smaller Desktop */
+@media only screen and (min-width: 992px) {
+	
+}
+/* Large devices and wide screens */
+@media only screen and (min-width: 1200px) {
+	
 }

@@ -1,0 +1,25 @@
+.loadingscreen {
+	position: absolute;
+	z-index: 10;
+	/* flex-flow: row wrap; */
+
+	background-image: linear-gradient(rgba(95, 76, 54, 0.7), rgba(209, 131, 58, 0.534)), url("../assets/images/home/home_bgMain.jpg");
+	 /* Full height */
+	 height: 100vh; 
+	 width: 100%;
+
+	 /* Center and scale the image nicely */
+	 background-position: center;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+}
+.loadingscreen-dots{
+	position: absolute;              
+   top: 50%;  
+   left: 50%;                   
+   transform: translate(0, -50%);  
+  
+	 
+	justify-content: center;
+	margin: 0; 
+}

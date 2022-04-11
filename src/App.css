@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
+body {
+	padding: 0;
+	margin: 0;
+	/* background: #f9fbf8; */
+	/* background-color: #fff8ed;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23e8d9b7' fill-opacity='0.48' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"); */
+	
+}
+body::-webkit-scrollbar {
+	display: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+	box-sizing: border-box;
+	/* font-family: Helvetica, sans-serif; */
+	/* font-weight: 900; */
+	color: #222;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.background-main {
+	/* background-image: url(./assets/images/home/home_bgMain.jpg); */
+	/* background-image: linear-gradient(rgba(95, 76, 54, 0.7), rgba(209, 131, 58, 0.534)), url("./assets/images/home/home_bgMain.jpg"); */
+	 /* Full height */
+	 /* height: 100%;  */
+
+	 /* Center and scale the image nicely */
+	 /* background-position: center;
+	 background-repeat: no-repeat;
+	 background-size: cover; */
+	 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.font-face-nycd {
+	font-family: "NothingYouCouldDo";
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+	display: grid;
+	
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.5fr repeat(3, 1.5fr) 0.5fr;
+	grid-auto-columns: 1fr;
+	gap: 5px 5px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"nav"
+		"drinks"
+		"bakery"
+		"sandwiches"
+		"footer";
+}
+/* .home-content-container {
+	
+} */
+
+.navbar-container {
+	grid-area: nav;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.drinks {
+	grid-area: drinks;
+	/* background-color: cadetblue; */
 }
+
+.bakery {
+	grid-area: bakery;
+	/* background-color: dimgrey; */
+}
+
+.sandwiches {
+	grid-area: sandwiches;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+/* body {
+	padding: 0;
+	margin: 0;
+	background: #f9fbf8;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: Helvetica, sans-serif;
+	font-weight: 900;
+	color: #222;
+}
+
+.gallery {
+	padding: 40px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+	position: relative;
+}
+
+.thumbnails {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.thumbnail {
+	flex: 1 0 33%;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.frame {
+	overflow: hidden;
+}
+
+.thumbnail img {
+	width: 100%;
+	height: 100%;
+}
+
+h1 {
+	font-size: 100px;
+	text-align: center;
+	position: fixed;
+	bottom: -100px;
+	z-index: 1;
+	color: #f9fbf8;
+	left: 50%;
+	transform: translateX(-50%);
+	pointer-events: none;
+}
+
+.single {
+	overflow: hidden;
+	height: 100vh;
+}
+
+.single img {
+	max-width: 100%;
+	max-height: 100vh;
+}
+
+.back {
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	font-size: 54px;
+	z-index: 1;
+}
+
+.back a {
+	text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+	h1 {
+		font-size: 140px;
+		bottom: -130px;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	h1 {
+		font-size: 180px;
+		bottom: -170px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	h1 {
+		font-size: 220px;
+		bottom: -200px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	h1 {
+		font-size: 280px;
+		bottom: -260px;
+	}
+} */

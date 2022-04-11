@@ -1,0 +1,106 @@
+.menu-page-container {
+	display: flex;
+	/* flex-flow: row wrap; */
+	justify-content: flex-start;
+	background-image: linear-gradient(rgba(95, 76, 54, 0.7), rgba(240, 168, 101, 0.7)), url("../assets/images/loader/loader_2.jpg");
+	 /* Full height */
+	 height: 100%; 
+	 width: 100%;
+	
+	 /* Center and scale the image nicely */
+	 background-position: center;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 overflow: hidden;
+}
+
+.single {
+	overflow: hidden;
+	height: 100vh;
+}
+
+.single img {
+	max-width: 100%;
+	max-height: 100vh;
+	margin: 5px;
+}
+
+.back {
+	/* position: fixed; */
+	/* top: 50px;
+	right: 120px; */
+	font-family: "NothingYouCouldDo";
+	display: flex;
+	position: relative;
+	top: 2em;
+	font-size: 34px;
+	z-index: 1;
+	
+}
+
+.back a {
+	text-decoration: none;
+	color: white;
+}
+.content-container {
+	display: flex;
+	/* justify-content: center;
+	align-items: center; */
+	/* top: 50px; */
+	width: 50%;
+	padding: 0;
+    margin: 0;
+    /* line-height: 75%; */
+}
+.menu-content {
+	display: flex;
+	flex-direction: column;
+	position:relative;
+	justify-content: center;
+	align-items: center;
+	right: 50px;
+	font-size: 16px;
+	z-index: 1;
+    width: 80%;
+}
+p {
+    margin: 0;
+	text-align: center;
+}
+h3 {
+    margin-bottom: 0px;
+    margin-left: 0;
+}
+h5 {
+	margin: 0;
+	position:relative;
+	color: rgb(231, 231, 231);
+}
+
+
+@media screen and (min-width: 600px) {
+	h1 {
+		font-size: 140px;
+		bottom: -130px;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	h1 {
+		font-size: 180px;
+		bottom: -170px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	h1 {
+		font-size: 220px;
+		bottom: -200px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	h1 {
+		font-size: 280px;
+		bottom: -260px;
+	}
+}
