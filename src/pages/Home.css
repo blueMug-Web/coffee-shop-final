@@ -517,7 +517,7 @@ body::-webkit-scrollbar {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-bottom: 26%;
+		margin-bottom: 33%;
 		padding: 0;
 	}
 	.footer-container {
@@ -559,16 +559,14 @@ body::-webkit-scrollbar {
 		  margin-top: 0em;
 		color: rgb(165, 165, 165);
 	}
-	p.footer-text {
-
-	}
+	
 }
 @media only screen and (min-width: 391px) and (max-width: 479px) { 
 	.categories-container{
 		display: flex;
 		position: relative;
 		flex-direction: column;
-		width: 80%;
+		width: 45%;
 		height:100%;
 		justify-content: center;
 		align-items: center;
@@ -579,7 +577,7 @@ body::-webkit-scrollbar {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-bottom: 26%;
+		margin-bottom: 25%;
 		padding: 0;
 	}
 	.footer-container {
@@ -621,9 +619,7 @@ body::-webkit-scrollbar {
 		  margin-top: 0em;
 		color: rgb(165, 165, 165);
 	}
-	p.footer-text {
-
-	}
+	
 }
 /* Small devices and most phones */
 @media only screen and (min-width: 480px) {

@@ -38,10 +38,6 @@ const ulContainer = {
 		transition,
 	},
 };
-const liItem = {
-	hidden: { opacity: 0 },
-	show: { opacity: 1 },
-};
 
 const Navbar = () => {
 	return (
@@ -60,7 +56,6 @@ const Navbar = () => {
 						initial="moveOut"
 						animate="moveIn"
 					>
-						{/* <a href="/accounting-services.html">ACCOUNTING SERVICES</a> */}
 						<Link to="/menu" className="anchor-link ">
 							Menu
 						</Link>
