@@ -1,14 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Home.css";
-import Navbar from "../components/Navbar";
-import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
+
+import { motion } from "framer-motion";
 import Drinks from "../components/Drinks";
 import Bakery from "../components/Bakery";
 import Sandwiches from "../components/Sandwiches";
-import home_banner from "../assets/images/home/home_banner.jpg";
-import home_bgMain from "../assets/images/home/home_bgMain.jpg";
-import about_pourDrink from "../assets/images/about/about_pourDrink.jpg";
-import about_pourDrink_med from "../assets/images/about/about_pourDrink_med.jpg";
 
 // import Footer from "../components/Footer";
 // import LoadingDots from "./components/LoadingDots";
@@ -31,13 +27,7 @@ const frameVariants = {
 };
 
 //New Variants
-const container = {
-	show: {
-		transition: {
-			staggerChildren: 0.35,
-		},
-	},
-};
+
 const bannerVariant = {
 	exit: { opacity: 0, transition },
 	enter: {
@@ -45,17 +35,6 @@ const bannerVariant = {
 		transition,
 	},
 };
-
-const exitTransition = {
-	duration: 1.5,
-	ease: [0.43, 0.13, 0.23, 0.96],
-};
-const enterTransition = {
-	duration: 1.8,
-	ease: [0.43, 0.13, 0.23, 0.96],
-};
-
-const duration = 0.2;
 
 function Home() {
 	return (
@@ -132,37 +111,9 @@ function Home() {
 						</div>
 					</motion.div>
 				</motion.div>
-				{/* <motion.div className="footer">
-					<Footer />
-				</motion.div> */}
 			</motion.div>
 		</>
 	);
 }
 
 export default Home;
-
-// Grid is created on the 'container'.
-// pages and everything else will be displayed within the container as components
-
-{
-	/* <Drinks
-				transition={transition}
-				thumbnailVariants={thumbnailVariants}
-				imageVariants={imageVariants}
-				frameVariants={frameVariants}
-			/>
-
-			<Bakery
-				transition={transition}
-				thumbnailVariants={thumbnailVariants}
-				imageVariants={imageVariants}
-				frameVariants={frameVariants}
-			/>
-			<Sandwiches
-				transition={transition}
-				thumbnailVariants={thumbnailVariants}
-				imageVariants={imageVariants}
-				frameVariants={frameVariants}
-			/> */
-}
