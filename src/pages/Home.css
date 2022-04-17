@@ -517,7 +517,7 @@ body::-webkit-scrollbar {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-bottom: 33%;
+		margin-bottom: 30%;
 		padding: 0;
 	}
 	.footer-container {
@@ -562,6 +562,10 @@ body::-webkit-scrollbar {
 	
 }
 @media only screen and (min-width: 391px) and (max-width: 479px) { 
+	h1.site-title{
+		font-size: 3em;
+		padding-top: 5%
+	}
 	.categories-container{
 		display: flex;
 		position: relative;
@@ -577,18 +581,11 @@ body::-webkit-scrollbar {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-bottom: 25%;
+		margin-bottom: 23%;
 		padding: 0;
 	}
 	.footer-container {
 		grid-area: footer;
-		/* margin-top: 8rem; */
-		/* display: flex;
-		position: relative; */
-	
-		/* position: absolute;
-		  bottom: 0;
-		  left: 0; */
 		display:flex;
 		  position: relative;
 		  bottom: 6%;
@@ -623,11 +620,15 @@ body::-webkit-scrollbar {
 }
 /* Small devices and most phones */
 @media only screen and (min-width: 480px) {
+	h1.site-title{
+		font-size: 4em;
+		padding-top: 0%
+	}
 	.categories-container{
 		display: flex;
 		position: relative;
 		flex-direction: column;
-		width: 30%;
+		width: 37%;
 		height:100%;
 		justify-content: center;
 		align-items: center;
@@ -639,11 +640,61 @@ body::-webkit-scrollbar {
 		z-index: 10;
 		top: 4rem;
 	}
-	h1.site-title{
-		font-size: 2.5em;
-	}
+	
 }
-
+@media only screen and (min-width: 600px) {
+	h1.site-title{
+		font-size: 4em;
+		padding-top: 0%
+	}
+	.categories-container{
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		width: 34%;
+		height:100%;
+		justify-content: center;
+		align-items: center;
+		padding-top: 20%; 
+	  } 
+	  .site-title{
+		display: flex;
+		position: relative;
+		z-index: 10;
+		top: 4rem;
+	}
+	
+}
+@media only screen and (min-width: 650px) {
+	h1.site-title{
+		font-size: 6em;
+		padding-top: 5%
+	}
+	.categories-container{
+		display: flex;
+		position: relative;
+		flex-direction: row;
+		width: 100%;
+		height:100%;
+		justify-content: center;
+		align-items: center;
+		padding-top: 20%; 
+	  } 
+	  .site-title{
+		display: flex;
+		position: relative;
+		z-index: 10;
+		top: 4rem;
+	}
+	ul.socials {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 2.0%;
+		padding: 0;
+	}
+	
+}
 /* Most tablets */
 @media only screen and (min-width: 768px) {
 	.categories-container{
